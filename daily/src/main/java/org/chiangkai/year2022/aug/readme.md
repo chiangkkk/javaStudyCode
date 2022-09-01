@@ -24,7 +24,7 @@ A:
 不可重复度 两次读的不一样
 幻读 读的数量不一样（另一个事务执行了插入操作）
 
-事务传播机制 
+#### 事务传播机制 
 - progration_required 默认传播机制，必须在事务中运行，没有事务则新建事务
 - progration_required_new 表示必须在自己的事务中运行，如果当前以及有事务了，则当前事务会被挂起
 - progration_support 如果当前有事务，则会在事务中运行
@@ -32,5 +32,7 @@ A:
 - prograiont_never 当前有事务，抛出异常
 - progration_mandatory 当前没事务，抛出异常
 - progration_nested 有事务，嵌套事务，没有与progration_required 一样
+
+
 
 
